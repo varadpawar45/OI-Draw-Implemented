@@ -1,0 +1,177 @@
+/* Ensure the height of body, html, and root container is 100% */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* .demo{
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  padding: 10px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+} */
+
+.tooltip{
+  text-wrap: nowrap;
+}
+
+.measurment-toolbar{
+  top: 5.9em;
+  left: 0.5em;
+}
+
+
+.ol-control button {
+  /* padding: 11px !important; */
+  color: white !important;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: inherit;
+  text-align: center;
+  height: 2em !important;
+  width: 2em !important;
+  line-height: .4em;
+  background-color: var(--ol-background-color);
+  border: none;
+  border-radius: 2px;
+  /* background-color: #598be1 !important; */
+  background-color: #243e57 !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+
+.toolbar-container{
+  position: absolute;
+  top: 5.5rem;
+  left: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.toolbar-button{
+  
+  /* padding: 11px !important; */
+  color: white !important;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: inherit;
+  text-align: center;
+  height: 2rem !important;
+  width: 2rem !important;
+  line-height: .4em;
+  border: none;
+  border-radius: 2px;
+  /* background-color: #598be1 !important; */
+  background-color: #243e57 !important;
+  justify-content: center !important;
+}
+
+
+.ol-popup {
+  position: absolute;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  bottom: 12px;
+  left: -50px;
+  z-index: 1000;
+}
+.ol-popup:after,
+.ol-popup:before {
+  top: 100%;
+  border: solid transparent;
+  content: ' ';
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+
+.ol-popup:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-top-color: white;
+  border-width: 10px;
+  /* left: 48px;
+  margin-left: -10px; */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+
+
+.ol-popup:before {
+  border-color: rgba(0, 0, 0, 0);
+  border-top-color: #ccc;
+  border-width: 11px;
+  /* left: 48px;
+  margin-left: -11px; */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.feature-popup-conatiner{
+  display: flex !important;
+  flex-direction: column;
+}
+
+.feature-edit-btn{
+  padding: 5px 6px;
+    background-color: #133285;
+    color: white;
+    border: none;
+}
+
+.feature-popup-close-btn {
+  position: absolute;
+  top: -13px;
+  right: -12px;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  padding: 2px 5px;
+  background-color: #df1f1fe6;
+  color: white;
+  font-size: 11px;
+}

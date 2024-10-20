@@ -1,0 +1,56 @@
+/* Ensure html, body, and #root take up the full height */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden; /* Prevent any scrollbars from appearing */
+}
+
+* {
+  box-sizing: inherit; /* Inherit box-sizing for all elements */
+}
+
+.app-container {
+  position: relative; /* Make the container relative for overlay positioning */
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.map-wrapper {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.info-component {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%; /* 40% width for the side panel */
+  height: 100%; /* Full height of the container */
+  /* background-color: #f4f4f4; */
+  background-color: white;
+  padding: 10px;
+  box-sizing: border-box;
+  z-index: 10; /* Ensure the side panel is above the map */
+}
+
+.toolbar-component {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15%; /* 10% width for the toolbar */
+  height: 100%; /* Full height */
+  background-color: #333; /* Toolbar background color */
+  color: white; /* Toolbar text color */
+  display: flex;
+  flex-direction: column; /* Vertical layout for toolbar buttons */
+  padding: 10px;
+  box-sizing: border-box;
+  z-index: 10; /* Ensure the toolbar is above the map */
+}
